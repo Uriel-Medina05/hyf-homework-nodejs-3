@@ -1,7 +1,7 @@
 const express = require ('express');
 const server = express();
+const port = 3000;
 
-<<<<<<< HEAD
 let users = [];
 
 server.get('/', (req, res) => {
@@ -23,15 +23,9 @@ server.post('/user', (req, res) => {
 }); 
 
 
-server.listen(3000, () => {
-	console.log("Server is running...");
+server.listen(port, () => {
+	console.log("Server is running on port: ", port);
 });
 
-=======
 
-server.get('/', (req, res) => {
-	res.send("Hello World!");
-}).listen(3000, () => {
-	console.log("Server is running...");
-});
->>>>>>> 5b0459b1ac78089c2b1e6dc2e6e6334d156d8f93
+
