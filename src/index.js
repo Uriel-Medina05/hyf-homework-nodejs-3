@@ -1,7 +1,6 @@
 const express = require ('express');
 const server = express();
 
-<<<<<<< HEAD
 let users = [];
 
 server.get('/', (req, res) => {
@@ -27,11 +26,10 @@ server.listen(3000, () => {
 	console.log("Server is running...");
 });
 
-=======
+
 
 server.get('/', (req, res) => {
 	res.send("Hello World!");
 }).listen(3000, () => {
 	console.log("Server is running...");
 });
->>>>>>> 5b0459b1ac78089c2b1e6dc2e6e6334d156d8f93
