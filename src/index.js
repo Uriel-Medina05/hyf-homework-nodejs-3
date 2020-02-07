@@ -27,15 +27,3 @@ server.listen(port, () => {
 	console.log("Server is running on port: ", port);
 });
 
-<<<<<<< HEAD
-
-
-=======
-
-
-server.get('/', (req, res) => {
-	res.send("Hello World!");
-}).listen(3000, () => {
-	console.log("Server is running...");
-});
->>>>>>> a1add1ecc4877cb15ff1de1c0169c56009d7534a
