@@ -22,6 +22,16 @@ server.post('/user', (req, res) => {
 	res.json(users);
 }); 
 
+server.delete('/user/:id', (req,res) => {
+    if(users.length > 0){
+        index = users.indexOf(req.params.id);
+        users.splice(index,1);
+        res.status(202).json( users );
+    } else {
+        res.status(204).json( users );
+    }  
+})
+
 
 server.listen(port, () => {
 	console.log("Server is running on port: ", port);
