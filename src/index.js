@@ -22,7 +22,6 @@ server.post('/user', (req, res) => {
 	res.json(users);
 }); 
 
-<<<<<<< HEAD
 server.delete('/user/:id', (req,res) => {
     if(users.length > 0){
         index = users.indexOf(req.params.id);
@@ -33,8 +32,6 @@ server.delete('/user/:id', (req,res) => {
     }  
 })
 
-=======
->>>>>>> 06725a787b50e6b53da31152e17727f69583b5ea
 
 server.listen(port, () => {
 	console.log("Server is running on port: ", port);
